@@ -57,13 +57,3 @@ A personal website showcasing motorbike riding experiences across the United Kin
 - Social media integration
 - Advanced filtering for gallery
 
-## File Structure
-```
-motorbike-uk-site/
-├── index.html          # Home page
-├── routes.html         # UK motorbike routes
-├── my-bike.html        # Bike and gear details
-├── gallery.html        # Photo gallery with contact form
-├── index.css           # Complete styling
-└── README.md           # This documentation
-```
