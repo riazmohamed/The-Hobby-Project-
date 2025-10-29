@@ -1,0 +1,684 @@
+/* Motorbike-themed CSS for UK Motorbike Adventures */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ff3333;
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Introduction Section */
+.intro h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    border-bottom: 3px solid #ff3333;
+    padding-bottom: 0.5rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+/* Highlights Cards */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.highlight-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #ff3333;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight-card h4 {
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.highlight-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Latest Section */
+.latest h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    border-bottom: 3px solid #ff3333;
+    padding-bottom: 0.5rem;
+}
+
+.latest article {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #ff3333;
+}
+
+.latest h4 {
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.latest p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #ff3333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    /* Page Introduction Styles */
+    .page-intro {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .page-intro h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #1a1a1a;
+        border-bottom: 3px solid #ff3333;
+        padding-bottom: 0.5rem;
+        display: inline-block;
+    }
+    
+    .page-intro p {
+        font-size: 1.2rem;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    /* Routes Page Styles */
+    .routes-container {
+        display: grid;
+        gap: 2rem;
+    }
+    
+    .route-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .route-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .route-card h3 {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 1rem;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    
+    .route-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .route-info {
+        padding: 1.5rem;
+    }
+    
+    .route-info p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .route-info strong {
+        color: #ff3333;
+    }
+    
+    .route-description {
+        margin: 1rem 0;
+        font-style: italic;
+        color: #555;
+    }
+    
+    .route-tips {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+    
+    .route-tips h4 {
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+    }
+    
+    .route-tips ul {
+        margin-left: 1.5rem;
+        color: #666;
+    }
+    
+    .route-tips li {
+        margin-bottom: 0.3rem;
+    }
+    
+    /* Riding Advice Section */
+    .advice-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .advice-card {
+        background-color: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 5px solid #ff3333;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .advice-card h4 {
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    /* Bike Page Styles */
+    .bike-showcase {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .bike-main {
+        text-align: center;
+    }
+    
+    .bike-main img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        margin-bottom: 1rem;
+    }
+    
+    .bike-main h3 {
+        font-size: 1.8rem;
+        color: #1a1a1a;
+    }
+    
+    .bike-specs h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1a1a1a;
+        border-bottom: 2px solid #ff3333;
+        padding-bottom: 0.5rem;
+    }
+    
+    .spec-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .spec-item {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 5px;
+        border-left: 3px solid #ff3333;
+    }
+    
+    .spec-item h4 {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .spec-item p {
+        color: #1a1a1a;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .bike-story h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1a1a1a;
+        border-bottom: 2px solid #ff3333;
+        padding-bottom: 0.5rem;
+    }
+    
+    .bike-story p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Riding Gear Styles */
+    .gear-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .gear-item {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .gear-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .gear-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .gear-item h4 {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 0.8rem;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    .gear-item p {
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    .gear-item strong {
+        color: #ff3333;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Maintenance Section */
+    .maintenance-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .maintenance-item {
+        background-color: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 5px solid #ff3333;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .maintenance-item h4 {
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .maintenance-item ul {
+        margin-left: 1.5rem;
+        color: #666;
+    }
+    
+    .maintenance-item li {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Gallery Page Styles */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .gallery-item {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .photo-info {
+        padding: 1.5rem;
+    }
+    
+    .photo-info h3 {
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .photo-info p {
+        margin-bottom: 0.5rem;
+        color: #666;
+    }
+    
+    .photo-info strong {
+        color: #ff3333;
+    }
+    
+    .photo-description {
+        margin-top: 1rem;
+        font-style: italic;
+        line-height: 1.5;
+    }
+    
+    /* Photography Tips */
+    .tips-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .tip-card {
+        background-color: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-left: 5px solid #ff3333;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .tip-card h4 {
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    /* Contact Form Styles */
+    .contact-form {
+        background-color: #f9f9f9;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+    
+    .contact-form h3 {
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .contact-form p {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #666;
+    }
+    
+    .contact-form-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #1a1a1a;
+        font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+    }
+    
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #ff3333;
+    }
+    
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+    
+    .contact-form-content .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .bike-showcase {
+            grid-template-columns: 1fr;
+        }
+        
+        .spec-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .gallery-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .gear-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .page-intro h2 {
+            font-size: 2rem;
+        }
+        
+        .route-card h3 {
+            font-size: 1.2rem;
+        }
+        
+        .photo-info h3 {
+            font-size: 1.1rem;
+        }
+    }
+    
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
